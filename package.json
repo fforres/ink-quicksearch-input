@@ -1,9 +1,9 @@
 {
   "name": "@fforres/ink-quicksearch-input",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Quicksearch Input Component for Ink 3",
-  "main": "./dist/QuickSearchInput.js",
-  "types": "./dist/QuickSearchInput.d.ts",
+  "main": "./build/QuickSearchInput.js",
+  "types": "./build/QuickSearchInput.d.ts",
   "private": false,
   "author": {
     "name": "Felipe Torres - @fforres"
