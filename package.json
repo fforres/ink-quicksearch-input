@@ -1,53 +1,60 @@
 {
-  "name": "ink-quicksearch-input",
+  "name": "@fforres/ink-quicksearch-input",
   "version": "1.0.0",
-  "description": "Quicksearch Input Component for Ink 2",
-  "main": "build/QuickSearchInput.js",
-  "types": "src/QuickSearchInput.tsx",
+  "description": "Quicksearch Input Component for Ink 3",
+  "main": "./dist/QuickSearchInput.js",
+  "types": "./dist/QuickSearchInput.d.ts",
+  "private": false,
   "author": {
-    "name": "John O'Sullivan <john@eximchain.com>"
+    "name": "Felipe Torres - @fforres"
   },
   "license": "MIT",
   "scripts": {
     "prepare": "npm run build",
     "build": "tsc",
-    "dev": "tsc --watch",
-    "start": "node build/examples/ExampleDirectory.js"
+    "dev": "node -r ts-node/register ./src/examples/ExampleDirectory.tsx"
   },
   "files": [
-    "src/QuickSearchInput.tsx",
+    "build/QuickSearchInput.d.ts",
     "build/QuickSearchInput.js",
     "tsconfig.json"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Eximchain/ink-quicksearch-input.git"
+    "url": "git+https://github.com/fforres/ink-quicksearch-input"
   },
   "keywords": [
     "ink",
     "ink-component"
   ],
   "bugs": {
-    "url": "https://github.com/Eximchain/ink-quicksearch-input/issues"
+    "url": "https://github.com/fforres/ink-quicksearch-input/issues"
   },
-  "homepage": "https://github.com/Eximchain/ink-quicksearch-input#readme",
+  "homepage": "https://github.com/fforres/ink-quicksearch-input#readme",
   "dependencies": {
-    "@types/has-ansi": "^3.0.0",
-    "@types/lodash.isequal": "^4.5.5",
-    "has-ansi": "3.0.0",
+    "has-ansi": "^4.0.0",
     "keypress": "^0.2.1",
     "lodash.isequal": "4.5.0"
   },
   "devDependencies": {
-    "@types/ink": "^2.0.3",
+    "@types/has-ansi": "^3.0.0",
+    "@types/lodash.isequal": "^4.5.5",
     "@types/node": "^12.12.14",
     "@types/react": "^16.9.15",
-    "ink": "^2.6.0",
+    "@typescript-eslint/eslint-plugin": "^4.29.0",
+    "@typescript-eslint/parser": "^4.29.0",
+    "eslint": "^7.32.0",
+    "eslint-config-xo": "^0.37.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "ink": "^3.0.9",
     "react": "^16.12.0",
     "term-size": "^2.1.0",
+    "ts-node": "^10.1.0",
     "typescript": "^3.7.3"
   },
   "peerDependencies": {
-    "ink": "2.6.x"
+    "ink": "^3.0.9"
   }
 }

@@ -1,31 +1,28 @@
 {
-  "include": [
-    "src/**/*"
-  ],
+  "include": ["src/**/*"],
   "exclude": ["node_modules", "build"],
   "compileOnSave": true,
   "compilerOptions": {
-      "target": "es5",            // Compatible with older browsers
-      "module": "commonjs",            // Compatible with both Node.js and browser
-      "moduleResolution": "node", // Tell tsc to look in node_modules for modules
-      "sourceMap": false,          // Creates *.js.map files
-      "inlineSourceMap": true,
-      "strict": true,             // Strict types, eg. prohibits `var x=0; x=null`
-      "alwaysStrict": true,        // Enable JavaScript's "use strict" mode
-
-      "outDir": "build",
-      "sourceRoot": "./src",
-      "noImplicitAny": true,
-      "allowSyntheticDefaultImports": true,
-      "esModuleInterop": true,
-      "typeRoots": ["node_modules/@types"],
-      "jsx": "react"
-    },
-    "typedocOptions": {
-      "mode" : "modules",
-      "out" : "docs/build",
-      "categorizeByGroup" : true,
-      "theme" : "docs/themeoverride",
-      "excludeNotExported" : false
-    }
+    "target": "ES2015", // Compatible with older browsers
+    "module": "CommonJS",
+    "moduleResolution": "Node", // Tell tsc to look in node_modules for modules
+    "strict": true, // Strict types, eg. prohibits `var x=0; x=null`
+    "alwaysStrict": true, // Enable JavaScript's "use strict" mode
+    "sourceMap": true, // Creates *.js.map files
+    "declarationMap": true,
+    "declaration": true,
+    "outDir": "build",
+    "sourceRoot": "./src",
+    "noImplicitAny": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "jsx": "react"
+  },
+  "typedocOptions": {
+    "mode": "modules",
+    "out": "docs/build",
+    "categorizeByGroup": true,
+    "theme": "docs/themeoverride",
+    "excludeNotExported": false
+  }
 }
