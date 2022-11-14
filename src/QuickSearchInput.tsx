@@ -40,6 +40,7 @@ const HighlightComponent: FC = ({ children }) => (
 
 export interface StatusProps {
   hasMatch: boolean;
+  children: any;
   label?: string;
 }
 
